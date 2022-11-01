@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet"  href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	
+
+	<title>Contatos</title>
+</head>
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="logo.png" alt="Logo da Barbearia"></h1> <!--alt é usada para a descrição da imagem para uma maior acessabilidade --> 
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="contatos.html">Contatos</a></li>
+				</ul>
+			</nav>	
+		</div>
+	</header>
+    <main>
+        <form>
+			<label for="nomesobrenome">Nome e Sobrenome</label>
+			<input type="text"  id="nomesobrenome" class="input-padrão" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" class="input-padrão" required placeholder="seuemail@dominio.com">
+
+			<label for="telefone">Telefone</label>
+			<input type="tel" id="telefone" class="input-padrão" required placeholder="(XX)XXXXX-XXXX">
+
+	
+
+			<label for="mensagem">Mensagem</label>
+			<textarea name="Mensagem" id="mensagem" cols="70" rows="10" class="input-padrão" required></textarea>
+
+			<fieldset><!-- Fielset é usado para substituir as divs quando se tem um campo com varios itens para se selecionar ou escrever como no caso dos campos de cartão de crédito-->
+				<legend>Como prefere que entremos em contato ?</legend><!--Legend no caso é usado para substituir os p quando se usa o separador fieldset-->
+				<label for="radio-email"><input type="radio" value="email" name="contato" id="radio-email">Email</label>
+				
+				
+				<label for="radio-telefone"><input type="radio" value="telefone" name="contato" id="radio-telefone">
+					Telefone</label>
+				
+				<label for="whatsapp"><input type="radio" value="whatsapp" name="contato" id="whatsapp" checked>Whatsapp</label>
+				
+			<fieldset>
+			<fieldset>
+				<legend class="checkbox-contato">Que horas prefere que entremos em contato ?</legend>
+				<select>
+					<option>Manhã</option>
+					<option>Tarde</option>
+					<option>Noite</option>
+
+				</select>
+			<fieldset>
+
+			<label ><input type="checkbox" checked> Gostaria de receber nossas novidades por email ?</label>
+
+			<input type="submit" value="Enviar Formulário" class="enviar" >
+
+			
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Dia</th>
+					<th>Horário</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Segunda</td>
+					<td>8h - 20h</td>
+				</tr>
+				<tr>
+					<td>Quarta</td>
+					<td>8h - 20h</td>
+				</tr>
+
+				<tr>
+					<td>Sexta</td>
+					<td>8h - 20h</td>
+
+				</tr>
+				<tr>
+					<td colspan="5" class="diasuteis">Dias da Semana</td> 
+				</tr>
+			</tbody>
+		</table>
+
+    </main>
+    <footer>
+		<img src="logo-branco.png" alt="Logo da Barbearia">
+		<p class="copyright">&copy; Copright Barbearia Alura - 2019</p>
+	
+	</footer>
+</body>
+</html>

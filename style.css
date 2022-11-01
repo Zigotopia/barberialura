@@ -1,0 +1,264 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+header{
+	background: lightgray;
+	padding: 20px 0;
+}	
+.caixa{  
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav{
+	position: absolute; 
+	top: 110px;
+	right: 0;
+
+}
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+	
+}
+nav a {
+	text-transform: uppercase; 
+	color: black;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #c78c19 ;
+	text-decoration: underline;
+
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+
+}
+.produtos li{ 
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;  /* serve pra inserir a mudanças de tamanho dentro da porcentagem ja escolhida*/
+	border: 2px solid black;
+	border-radius: 10px;
+	
+}
+
+.produtos li:hover{
+	border-color: #c78c19;
+}
+.produtos li:active{
+	border-color: rgb(37, 143, 204);
+}
+.produtos li:hover h2{
+	font-size: 34px;
+}
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+
+
+}
+.produto-preço{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+
+}
+.produto-descrição{
+	font-size:18px;
+
+}
+ 
+footer{
+	text-align: center;
+	background: url(bg.jpg);/* é usado quando queremos botar o background como uma imagem*/
+	padding: 40px 0;
+}
+.copyright{
+	color: white;
+	font-size: 13px;
+}
+
+
+
+form{
+	margin: 40px 0;
+	
+}
+
+form label, form legend{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.input-padrão{
+	display: block;
+	margin: 0 0 20px;/* a magin é para o espaçamento externo a borda e entre o seus elementos*/
+	padding: 10px 25px;/* O padding é utilizado especificamente quando para espaçar um conteudo entre a borda e seus elementos*/
+	width: 50%;
+}
+
+.checkbox-contato{
+	margin: 20px 0;
+}
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	margin: 20px 0;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover{
+	background-color: darkorange;
+	transform: scale(1.2);
+
+}
+table{
+	margin: 20px  0 40px;
+}
+thead{
+	background-color: gray;
+	color: white;
+	font-weight: bold;
+}
+td, th{
+	border: 1px solid black;
+	padding:8px 15px ;
+}
+.diasuteis{
+	text-align: center;
+}
+
+/* css do index*/
+.banner{
+	width: 100%;
+}
+
+.apresentação{
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+.titulo-principal{
+	font-size: 2em; /* em é uma medida proporcional ou seja, cada em é unidade do padrºao utilizado pelo navegador*/
+	text-align: center;
+	margin:0  0 1em;	
+	clear: left;/* o clear serve para limpar as mudanças de posições que afetou alguns desses elementos da pagina como o titulo*/
+}
+
+section p{
+	margin: 0 0 1em;
+	
+}
+section strong{
+	font-weight: bold;
+}
+
+section em {
+	font-style: italic;
+
+}
+.mapa{
+	padding: 3em 0;
+	background: linear-gradient(#fefefe,#888888);
+
+}
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p{
+	text-align: center;
+	margin: 0 0 2em;
+}
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+}
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+
+}
+.lista-beneficios{
+	display:inline-block;
+	width: 40%;
+	vertical-align: top;
+	
+}
+.itens{
+	line-height: 1.5;/* serve para alterar o espaçament entre as linhas*/
+}
+
+.itens:before{
+	content: "★";
+}
+/*é um dos pseudoelementeos que ajudam a fazer ajustes sem necessariamente precisar criar uma nova div*/
+.itens:first-child{
+	font-weight: bold
+	;
+}
+.imgbeneficios{
+	width: 60%;
+	opacity:70% ;/* para botar opacidade em em cores usamos o rgba*/
+	box-shadow: 10px 10px 10px 0 ; /* os primeiros dois valores são as dimensões enquanto o teceiro valor é o blur da sombra e o quarto é o espalhamento*/
+}
+ .imgbeneficios:hover{
+	 opacity: 30%;
+	 transition: 400ms	;
+ }
+
+.utensilios{
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+	
+
+}
+
+
+
+.video{
+	width: 560px;
+	margin:2em auto;
+}
+
+@media screen and(max-width: 480px){
+	.caixa, .principal, .conteudo-beneficios,  .mapa-conteudo , .video{
+		width: auto;
+	
+	}
+	h1 {
+		text-align: center;
+
+	}
+
+	nav{
+		position: static;
+	}
+	.lista-beneficios, .imgbeneficios{
+		width: 100%;
+	}
+	
+}
